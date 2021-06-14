@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="facebook_app_id">382499579816367</string>
+    <string name="fb_login_protocol_scheme">fb382499579816367</string>
+    <string name="app_name">BAOIAM</string>
+    <string name="ob_get_started">GET STARTED</string>
+    <string name="login_preferences">com.example.login_and_signup_login_preference</string>
+    <string name="login_status_preference">com.example.login_and_signup_login_status_preference</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".HomePage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#1367B8"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/menu1"
+                    android:layout_width="36dp"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/ic_menu" />
+
+                <ImageView
+                    android:id="@+id/search1"
+                    android:layout_width="229dp"
+                    android:layout_height="59dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:nextFocusLeft="@drawable/menu3"
+                    app:srcCompat="@drawable/search_bar2" />
+
+                <ImageView
+                    android:id="@+id/bookmark1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    app:srcCompat="@drawable/ic_cart" />
+
+                <ImageView
+                    android:id="@+id/profile1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_user" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+
+                    android:layout_marginTop="20dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_height="170dp"
+                        app:cardBackgroundColor="#E7F0FF"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        app:cardCornerRadius="20dp">
+
+
+
+
+                    <com.smarteist.autoimageslider.SliderView
+                        android:id="@+id/slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:sliderAnimationDuration="600"
+                        app:sliderAutoCycleDirection="back_and_forth"
+                        app:sliderIndicatorAnimationDuration="600"
+                        app:sliderIndicatorEnabled="true"
+                        app:sliderIndicatorGravity="center_horizontal|bottom"
+                        app:sliderIndicatorMargin="15dp"
+                        app:sliderIndicatorOrientation="horizontal"
+                        app:sliderIndicatorPadding="3dp"
+                        app:sliderIndicatorRadius="1dp"
+                        app:sliderIndicatorSelectedColor="#5A5A5A"
+                        app:sliderIndicatorUnselectedColor="#FFF"
+                        app:sliderScrollTimeInSec="2" >
+
+                        <ImageView
+                            android:id="@+id/circle_menu"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:src="@drawable/ic_menubar"
+
+                            />
+                    </com.smarteist.autoimageslider.SliderView>
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="260dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="131dp"
+                    android:layout_height="70dp"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#1367B8"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:id="@+id/free_trial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:fontFamily="@font/alike"
+                        android:gravity="center"
+                        android:text="7 Days Free Trial"
+                        android:textColor="#ffffff" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="131dp"
+                    android:layout_height="70dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    app:cardBackgroundColor="#1367B8"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:id="@+id/demo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:fontFamily="@font/alike"
+                        android:gravity="center"
+                        android:text="Book a Demo Session"
+                        android:textColor="#ffffff" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="131dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    app:cardBackgroundColor="#1367B8"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:id="@+id/internship_course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:fontFamily="@font/alike"
+                        android:gravity="center"
+                        android:text="Internship Training"
+                        android:textColor="#ffffff" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="131dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    app:cardBackgroundColor="#1367B8"
+                    app:cardCornerRadius="5dp">
+
+
+                    <TextView
+                        android:id="@+id/professional_course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:fontFamily="@font/alike"
+                        android:gravity="center"
+                        android:text="Professional Courses"
+                        android:textColor="#ffffff" />
+                </androidx.cardview.widget.CardView>
+
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="480dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="1"
+                android:columnOrderPreserved="false"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/alike_angular"
+                        android:gravity="center"
+                        android:text="Upcoming Live Classes"
+                        android:textColor="#151313"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="182dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="15dp"
+                    app:cardCornerRadius="12dp"
+
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#E7F0FF"
+                        android:orientation="vertical">
+
+
+
+                        <ImageView
+                            android:id="@+id/live_classes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cropToPadding="true"
+                            android:padding="5dp"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/live_classes3" />
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/alike_angular"
+                        android:gravity="center"
+                        android:text="New Courses"
+                        android:textColor="#151313"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="182dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#E7F0FF"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="15dp"
+                    app:cardCornerRadius="12dp"
+
+                    >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E7F0FF"
+                    android:orientation="vertical">
+
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPagerMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_alignBottom="@+id/viewPagerCountDots"
+                        android:background="#E7F0FF"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:id="@+id/viewPagerCountDots"
+                            android:layout_width="398dp"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/ll_footer"
+
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_footer"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:orientation="vertical"
+                            android:visibility="invisible"/>
+
+
+                    </androidx.viewpager.widget.ViewPager>
+                </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+        </LinearLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:foregroundGravity="bottom"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_alignParentBottom="true"
+            >
+
+
+
+
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
